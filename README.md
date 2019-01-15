@@ -1,3 +1,7 @@
+## fibos-p2p
+
+用于生成所有p2p地址文件，节点注册或者删除 producerjson 信息
+监测 p2p可连接情况
 
 ## 准备
 	
@@ -25,3 +29,12 @@
 	2. 修改自己节点的信息
 
 	3. 运行脚本执行 2 操作
+
+
+## about producerjson
+	
+	Producer JSON smart contract for FIBOS.
+
+	FIBOS 出块人描述文件
+	
+	https://github.com/fibosRocks/producerjson
