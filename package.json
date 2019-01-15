@@ -1,0 +1,12 @@
+{
+  "name": "fibos-p2p",
+  "version": "1.0.0",
+  "description": "check p2p",
+  "repository": "",
+  "keywords": "",
+  "author": "lc",
+  "license": "ISC",
+  "dependencies": {
+    "fibos.js": "^0.3.4"
+  }
+}

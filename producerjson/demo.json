@@ -1,0 +1,41 @@
+{
+	"producer_account_name": "demo",
+	"org": {
+		"candidate_name": "demo",
+		"website": "http://fibos.io",
+		"email": "",
+		"branding": {
+            "logo_256": "https://fibos.io/imgs/logo.png",
+            "logo_1024": "",
+            "logo_svg": ""
+        }
+	},
+	"nodes": [{
+		"location": {
+			"name": "London",
+			"country": "UK",
+			"latitude": 51.3025,
+			"longitude": 0.0739
+		},
+		"node_type": "full",
+		"api_endpoint": "",
+		"ssl_endpoint": ""
+	}, {
+		"location": {
+			"name": "London",
+			"country": "UK",
+			"latitude": 51.3025,
+			"longitude": 0.0739
+		},
+		"node_type": "producer"
+	}, {
+		"location": {
+			"name": "London",
+			"country": "UK",
+			"latitude": 51.3025,
+			"longitude": 0.0739
+		},
+		"node_type": "seed",
+		"p2p_endpoint": ""
+	}]
+}
