@@ -65,18 +65,18 @@ let httpServer = new http.Server("", 8080, [
 			});
 			const checlist = rep.json();
 			let message = {
-				conneted: 0,
 				all: checlist.length,
-				p2p: [],
+				conneted: 0,
+				connetedp2p: [],
 				p2powner: {}
 			};
 			// console.log(checlist);
 			checlist.forEach((d) => {
 				if (d.last_handshake.chain_id == config.chainId) {
 					message.conneted += 1;
-					message.p2p.push(d.peer);
-					message.p2powner[d.peer] = p2powner[d.peer] || "";
+					message.connetedp2p.push(d.peer);
 				}
+				message.p2powner[d.peer] = p2powner[d.peer] || "";
 			});
 			req.response.json(message);
 		},
