@@ -68,6 +68,7 @@ let httpServer = new http.Server("", 8080, [
 				all: checlist.length,
 				conneted: 0,
 				connetedp2p: [],
+				allp2p: [],
 				p2powner: {}
 			};
 			// console.log(checlist);
@@ -76,6 +77,7 @@ let httpServer = new http.Server("", 8080, [
 					message.conneted += 1;
 					message.connetedp2p.push(d.peer);
 				}
+				message.allp2p.push(d.peer);
 				message.p2powner[d.peer] = p2powner[d.peer] || "";
 			});
 			req.response.json(message);
